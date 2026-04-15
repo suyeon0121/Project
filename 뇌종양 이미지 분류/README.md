@@ -5,6 +5,9 @@
 
 ### 오류 
 - 수정 전 코드
+
+<br/>
+
 '''
 full_dataset = ImageFolder(root='/content/drive/MyDrive/Colab Notebooks/뇌종양 분류/Training', transform=transforms)
 
@@ -15,6 +18,7 @@ train_data, val_data = random_split(full_dataset, [train_size, val_size])
 train_data.dataset.transform = train_transform
 val_data.dataset.transform = val_transform
 '''
+
 <br/>
 
 위 코드의 흐름:
