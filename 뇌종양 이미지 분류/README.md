@@ -1,6 +1,8 @@
 ## 뇌종양 이미지 분류
 - 캐글 데이터: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri
 
+<br/>
+
 ### 오류 
 - 수정 전 코드
 '''
@@ -30,8 +32,12 @@ val_data.dataset.transform = val_transform
 - 그 다음 줄에서 `val_data.dataset.transform` 을 설정하면, 방금 설정한 Train용 변환이 Val용 변환으로 덮어씌워져 버린다.
 - 결과적으로 Train와 Val 모두 똑같은 val_transform으로 작동하게 되어 학습데이터에 Augmentation(회전, 반전 등)이 하나도 안 들어간다.
 
+<br/>
+
 ### 해결 (배운 점)
 따라서 데이터셋 객체를 두 번 선언하거나, 인덱스를 먼저 나눈 뒤 각각 다른 transform이 적용된 객체에 주입하는 방식을 사용한다. 
+
+<br/>
 
 ### 결과 
 
@@ -46,7 +52,30 @@ val_data.dataset.transform = val_transform
 - Pituitary tumor: 뇌하수체 종양
 - No Tumor: 정상(종양 없음)
 
+<br/>
 
+### 추가 
+- Early Stopping 추가
+  - 기존 코드에서 에포크 7 이후로 정확도가 오르지 않는 상황이 발생
+  - 불필요한 연산을 방지하고자 Early Stopping 추가
+
+  """
+Epoch 7/10
+Train Loss: 0.0022 Acc: 1.0000
+Val Loss: 0.0724 Acc: 0.9808
+----------
+Epoch 8/10
+Train Loss: 0.0015 Acc: 1.0000
+Val Loss: 0.0745 Acc: 0.9756
+----------
+Epoch 9/10
+Train Loss: 0.0019 Acc: 0.9996
+Val Loss: 0.0724 Acc: 0.9774
+----------
+Epoch 10/10
+Train Loss: 0.0015 Acc: 1.0000
+Val Loss: 0.0777 Acc: 0.9739
+  """
 
 
 
