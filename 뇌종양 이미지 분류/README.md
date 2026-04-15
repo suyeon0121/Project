@@ -92,3 +92,10 @@ val_data.dataset.transform = val_transform
 <img width="1096" height="762" alt="image" src="https://github.com/user-attachments/assets/1fc68c2b-42dc-408f-8378-d86b9057b737" />
 
 <br/>
+
+<br/>
+
+- 전이학습과 ResNet을 책으로 배우고 프로젝트를 진행을 해서 그나마 흐름이라던지 구조는 이해할 수 있었지만 디테일 부분은 챙기지 못했다.
+- Early stopping을 넣고 싶었지만 혼자 힘으로 코드를 추가하지 못해 도움 받아서 작성했다.
+- 그래도 직접 데이터를 다루며 만들어보는게 재미도 있고 진행하면서 코드를 자세히 뜯어보는 게 있었다.
+- 다음엔 보지 않고 다시 이 코드를 작성해봐야겠다. 
