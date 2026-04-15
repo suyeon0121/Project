@@ -8,7 +8,7 @@
 
 <br/>
 
-'''
+```
 full_dataset = ImageFolder(root='/content/drive/MyDrive/Colab Notebooks/뇌종양 분류/Training', transform=transforms)
 
 train_size = int(0.8 * len(full_dataset))
@@ -17,7 +17,7 @@ train_data, val_data = random_split(full_dataset, [train_size, val_size])
 
 train_data.dataset.transform = train_transform
 val_data.dataset.transform = val_transform
-'''
+```
 
 <br/>
 
@@ -63,23 +63,32 @@ val_data.dataset.transform = val_transform
   - 기존 코드에서 에포크 7 이후로 정확도가 오르지 않는 상황이 발생
   - 불필요한 연산을 방지하고자 Early Stopping 추가
 
-  """
-Epoch 7/10
-Train Loss: 0.0022 Acc: 1.0000
-Val Loss: 0.0724 Acc: 0.9808
-----------
-Epoch 8/10
-Train Loss: 0.0015 Acc: 1.0000
-Val Loss: 0.0745 Acc: 0.9756
-----------
-Epoch 9/10
-Train Loss: 0.0019 Acc: 0.9996
-Val Loss: 0.0724 Acc: 0.9774
-----------
-Epoch 10/10
-Train Loss: 0.0015 Acc: 1.0000
-Val Loss: 0.0777 Acc: 0.9739
-  """
+<br/>
 
+  ```
+  Epoch 7/10
+  Train Loss: 0.0022 Acc: 1.0000
+  Val Loss: 0.0724 Acc: 0.9808
+  ----------
+  Epoch 8/10
+  Train Loss: 0.0015 Acc: 1.0000
+  Val Loss: 0.0745 Acc: 0.9756
+  ----------
+  Epoch 9/10
+  Train Loss: 0.0019 Acc: 0.9996
+  Val Loss: 0.0724 Acc: 0.9774
+  ----------
+  Epoch 10/10
+  Train Loss: 0.0015 Acc: 1.0000
+  Val Loss: 0.0777 Acc: 0.9739
+  ```
 
+<br/>
 
+- 모델이 정답을 맞히지 못한 케이스들을 추출해서 검토
+
+<br/>
+
+<img width="1096" height="762" alt="image" src="https://github.com/user-attachments/assets/1fc68c2b-42dc-408f-8378-d86b9057b737" />
+
+<br/>
