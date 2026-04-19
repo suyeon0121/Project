@@ -47,7 +47,12 @@ val_data.dataset.transform = val_transform
 
 <br/>
 
-<img width="943" height="663" alt="image" src="https://github.com/user-attachments/assets/5e1c7b4a-7e16-4e62-9d96-9bc98e39bbb8" />
+<img width="914" height="347" alt="image" src="https://github.com/user-attachments/assets/b972af97-e298-4442-8ba4-07aa7904cfb8" />
+
+<br/>
+
+<img width="1104" height="766" alt="image" src="https://github.com/user-attachments/assets/faf1ee8d-bec6-4715-861e-e88268334490" />
+
 
 <br/>
 
@@ -82,16 +87,6 @@ val_data.dataset.transform = val_transform
   Train Loss: 0.0015 Acc: 1.0000
   Val Loss: 0.0777 Acc: 0.9739
   ```
-
-<br/>
-
-- 모델이 정답을 맞히지 못한 케이스들을 추출해서 검토
-
-<br/>
-
-<img width="1096" height="762" alt="image" src="https://github.com/user-attachments/assets/1fc68c2b-42dc-408f-8378-d86b9057b737" />
-
-<br/>
 
 <br/>
 
